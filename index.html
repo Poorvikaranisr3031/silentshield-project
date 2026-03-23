@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SilentShield</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+
+    <h1>🚨 SilentShield</h1>
+    <h3>Women Safety Alert System</h3>
+
+    <p>Click the button below to send an emergency alert.</p>
+
+    <button onclick="sendAlert()" style="padding: 15px 30px; font-size: 16px; background-color: red; color: white; border: none; border-radius: 5px;">
+        Send Emergency Alert
+    </button>
+
+    <p id="message" style="margin-top: 20px; font-weight: bold;"></p>
+
+    <script>
+        function sendAlert() {
+            document.getElementById("message").innerHTML = "🚨 Alert Sent! Location shared with emergency contacts.";
+        }
+    </script>
+
+</body>
+</html>
